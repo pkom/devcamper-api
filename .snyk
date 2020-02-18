@@ -1,0 +1,88 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-JSYAML-174129:
+    - uglify > grunt > js-yaml:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+  SNYK-JS-LODASH-450202:
+    - uglify > grunt > findup-sync > lodash:
+        reason: ''
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > grunt-legacy-log > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > grunt-legacy-log > grunt-legacy-log-utils > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+    - uglify > grunt > grunt-legacy-util > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+  SNYK-JS-LODASH-73638:
+    - uglify > grunt > findup-sync > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > grunt-legacy-log > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > grunt-legacy-log > grunt-legacy-log-utils > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+    - uglify > grunt > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+    - uglify > grunt > grunt-legacy-util > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+  SNYK-JS-LODASH-73639:
+    - uglify > grunt > findup-sync > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > grunt-legacy-log > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > grunt-legacy-log > grunt-legacy-log-utils > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+    - uglify > grunt > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+    - uglify > grunt > grunt-legacy-util > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+  'npm:lodash:20180130':
+    - uglify > grunt > findup-sync > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > grunt-legacy-log > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.081Z'
+    - uglify > grunt > grunt-legacy-log > grunt-legacy-log-utils > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+    - uglify > grunt > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+    - uglify > grunt > grunt-legacy-util > lodash:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+  'npm:clean-css:20180306':
+    - uglify > grunt-contrib-cssmin > clean-css:
+        reason: None given
+        expires: '2020-03-14T22:39:13.082Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - uglify > grunt > minimatch:
+        patched: '2020-02-13T22:37:05.241Z'
+    - uglify > grunt > glob > minimatch:
+        patched: '2020-02-13T22:37:05.241Z'
+    - uglify > grunt > findup-sync > glob > minimatch:
+        patched: '2020-02-13T22:37:05.241Z'
+  'npm:uglify-js:20151024':
+    - uglify > grunt-contrib-uglify > uglify-js:
+        patched: '2020-02-13T22:37:05.241Z'
